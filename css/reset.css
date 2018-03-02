@@ -1,0 +1,19 @@
+body {
+	color: #333333;
+	padding: 60px 80px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+p.medium {
+	font-size: 20px;
+}
+p.large {
+	font-size: 28px;
+}
+p.xlarge {
+	font-size: 36px;
+}

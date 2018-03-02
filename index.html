@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebox</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="icon" type="img/x-icon" href="img/favicon.ico">
+</head>
+<body>
+	<article class="firebox">
+		<header class="firebox-header">
+			<h1>Firebox</h1>
+		</header>
+
+		<section class="reference">
+			<nav class="reference-nav">
+				<header><h4>CSS flexbox<h4></header>
+				<p>Morphe blog. Conocimientos mínimos.</p>
+				<a href="http://blog.morphe.abanca.io/blog/post/flexbox" target="_blank">Más información...</a>	
+			</nav>
+
+			<nav class="reference-nav">
+				<header><h4>Guía completa flexbox<h4></header>	
+				<p>Conceptos básicos agrupados por <strong>container</strong> y por <strong>items</strong>.</p>
+				<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Más información...</a>
+			</nav>
+
+			<nav class="reference-nav is-indirect">
+				<header><h4>Elementos de referencia<h4></header>
+				<p>Elementos de referencia HTML utilizados.</p>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Más información...</a>
+			</nav>
+		</section>
+
+		<section class="property">
+			<section class="property-container">
+				<h2>Propiedades del padre</h2>
+				
+				<ul class="father-preview is-first">
+					<li class="figure is-disable"><p>1<p></li>
+					<li class="figure is-disable"><p>2<p></li>
+					<li class="figure is-disable"><p>3<p></li>
+					<li class="figure is-disable"><p>4<p></li>
+				</ul>
+			
+				<article class="display">
+					<h3>display</h3>
+					<p>Define un contenedor flexible</p>
+					<code>display: flex;</code>
+				</article>
+
+				<article class="flex-direction">
+					<h3>flex-direction</h3>
+					<p>Establece la dirección</p>
+					<code>flex-direction: row;</code>
+					<ul class="father-preview">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+					</ul>
+
+					<code>flex-direction: row-reverse;</code>
+					<ul class="father-preview is-reverse">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+					</ul>
+
+					<code>flex-direction: colum;</code>
+					<ul class="father-preview is-colum">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+					</ul>
+				</article>
+
+				<article class="flex-wrap">
+					<h3>flex-wrap</h3>
+					<p>Los items se colocan en varias líneas</p>
+					<code>flex-wrap: wrap;</code>
+					<ul class="father-preview is-wrap">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+						<li class="figure is-basis"><p>5<p></li>
+						<li class="figure is-basis"><p>6<p></li>
+						<li class="figure is-basis"><p>7<p></li>
+					</ul>
+					<code>flex-wrap: wrap-reverse;</code>
+					<ul class="father-preview is-wrap-reverse">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+						<li class="figure is-basis"><p>5<p></li>
+						<li class="figure is-basis"><p>6<p></li>
+						<li class="figure is-basis"><p>7<p></li>
+					</ul>
+				</article>
+
+				<article class="justify-content">
+					<h3>justify-content</h3>
+					<p>Define la alineación a lo largo del eje principal. <br>
+						Por defecto es <code>flex-start</code> alinea los elementos al inicio</p>
+					<code>justify-content: flex-end;</code>
+					<ul class="father-preview is-flex-end">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+					</ul>
+					<code>justify-content: center;</code>
+					<ul class="father-preview is-center">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>justify-contect: space-between;</code>
+					<ul class="father-preview is-between">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>justify-contect: space-around;</code>
+					<ul class="father-preview is-around">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>justify-contect: space-evenly;</code>
+					<ul class="father-preview is-evenly">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+				</article>
+
+				<article class="align-items">
+					<h3>align-items</h3>
+					<p>Define la alineación a lo largo del eje transversal</p>
+					<code>align-items: flex-start;</code>
+					<ul class="father-preview is-aling-start">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis2y"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>aling-items: flex-end;</code>
+					<ul class="father-preview is-aling-end">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis2y"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>aling-items: center;</code>
+					<ul class="father-preview is-aling-center">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis2y"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>aling-items: stretch;</code>
+					<ul class="father-preview is-aling-stretch">
+						<li class="figure is-basis"><p>1</p></li>
+						<li class="figure is-basis2y"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+					</ul>
+					<code>aling-items: baseline;</code>
+					<ul class="father-preview is-baseline">
+						<li class="figure is-basis"><p>Prueba</p></li>
+						<li class="figure is-basis"><p class="medium">Prueba</p></li>
+						<li class="figure is-basis"><p class="large">Prueba</p><li>
+						<li class="figure is-basis"><p class="xlarge">Prueba</p></li>
+					</ul>
+				</article>
+
+				<article class="align-content">
+					<h3>align-content</h3>
+					<p>Las multilíneas se alinean en el eje transversal dentro del contenedor</p>
+					<code>flex-wrap: wrap;<br>aling-content: flex-start;</code>
+					<ul class="father-preview is-height is-content-start">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+					<code>flex-wrap: wrap;<br>aling-content: flex-end;</code>
+					<ul class="father-preview is-height is-content-end">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+					<code>flex-wrap: wrap;<br>aling-content: center;</code>
+					<ul class="father-preview is-height is-content-center">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+					<code>flex-wrap: wrap;<br>aling-content: strech;</code>
+					<ul class="father-preview is-height is-content-strech">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+					<code>flex-wrap: wrap;<br>aling-content: space-between;</code>
+					<ul class="father-preview is-height is-content-between">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+					<code>flex-wrap: wrap;<br>aling-content: space-around;</code>
+					<ul class="father-preview is-height is-content-around">
+						<li class="figure is-basis2x"><p>1</p></li>
+						<li class="figure is-basis"><p>2</p></li>
+						<li class="figure is-basis"><p>3</p></li>
+						<li class="figure is-basis"><p>4</p></li>
+						<li class="figure is-basis2x"><p>5</p></li>
+						<li class="figure is-basis"><p>6</p></li>
+						<li class="figure is-basis2x"><p>7</p></li>
+						<li class="figure is-basis"><p>8</p></li>
+						<li class="figure is-basis"><p>9</p></li>
+					</ul>
+				</article>
+			</section>
+
+			<section class="property-item">
+				<h2>Propiedades del hijo</h2>
+				
+				<ul class="father-preview is-disable">
+					<li class="figure is-basis"><p>1<p></li>
+					<li class="figure is-basis"><p>2<p></li>
+					<li class="figure is-basis"><p>3<p></li>
+					<li class="figure is-basis"><p>4<p></li>
+				</ul>
+
+				<article class="flex-basis">
+					<h3>flex-basis</h3>
+					<p>Aplica un ancho concreto a los hijos. Puede ser una longitud (por ejemplo: 20%, 70px) o una palabra clave.</p>
+					<code>flex-basis: 70px;</code>
+					<ul class="father-preview">
+						<li class="figure is-basis"><p>1<p></li>
+						<li class="figure is-basis"><p>2<p></li>
+						<li class="figure is-basis"><p>3<p></li>
+						<li class="figure is-basis"><p>4<p></li>
+					</ul>			
+				</article>
+				<article class="flex-grow">
+					<h3>flex-grow</h3>
+					<p>Capidad que tiene un elemento de crecer, es decir, cuánto espacio del contenedor va a ocupar. Los valores posibles son</p>
+					<ul>
+						<li>Con 0 ocupa el espacio que necesita</li>
+						<li>Si coge el valor 1 el espacio restante del contenedor se distribuye por igual</li>
+						<li>Si coge el valor 2 el espacio restante ocupará el doble</li>
+					</ul>
+					<code>flex-grow: 0;</code>
+					<ul class="father-preview">
+						<li class="figure is-grow-0"><p>Cada<p></li>
+						<li class="figure is-grow-0"><p>hijo<p></li>
+						<li class="figure is-grow-0"><p>ocupa<p></li>
+						<li class="figure is-grow-0"><p>su<p></li>
+						<li class="figure is-grow-0"><p>espacio<p></li>
+					</ul>					
+					<ul class="father-preview">
+						<li class="figure is-grow-0"><p>1<p></li>
+						<li class="figure is-grow-0"><p>2<p></li>
+						<li class="figure is-grow-0"><p>3<p></li>
+						<li class="figure is-grow-0"><p>4<p></li>
+					</ul>
+					<code>flex-grow: 0; <br> flex-basis: 70px;</code>
+					<ul class="father-preview">
+						<li class="figure is-basis is-grow-0"><p>1<p></li>
+						<li class="figure is-basis is-grow-0"><p>2<p></li>
+						<li class="figure is-basis is-grow-0"><p>3<p></li>
+						<li class="figure is-basis is-grow-0"><p>4<p></li>
+					</ul>
+
+					<code>flex-grow: 1;</code>
+					<ul class="father-preview">
+						<li class="figure is-grow-1"><p>1<p></li>
+						<li class="figure is-grow-1"><p>2<p></li>
+						<li class="figure is-grow-1"><p>3<p></li>
+						<li class="figure is-grow-1"><p>4<p></li>
+					</ul>	
+					<code>flex-grow: 1; /* Hjos pares <br>flex-grow: 2; /* Hijos impares</code>
+					<ul class="father-preview">
+						<li class="figure is-grow-1"><p>1<p></li>
+						<li class="figure is-grow-2"><p>2<p></li>
+						<li class="figure is-grow-1"><p>3<p></li>
+						<li class="figure is-grow-2"><p>4<p></li>
+					</ul>
+				</article>
+				<article class="flex-shrink">
+					<h3>flex-shrink</h3>
+					<p>Por defecto tiene el valor 1. Esto implica que los hijos se encogen si no tienen espacio.<br>
+					Si queremos evitar que una columna se encoja le pondremos el valor 0</p>
+					<code>flex-shrink: 1;</code>
+					<ul class="father-preview">
+						<li class="figure"><p>El tigre y el gato<p></li>
+						<li class="figure"><p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres por que a veces ese silencio puede hacer la diferencia.... entre grandeza e ineptitud.</p>
+						</li>
+						<li class="figure"><p>Eitaro Oshima<p></li>
+					</ul>	
+					<code>flex-shrink: 0; /* Primer hijo</code>
+					<ul class="father-preview">
+						<li class="figure is-shrink"><p>El tigre y el gato<p></li>
+						<li class="figure "><p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres por que a veces ese silencio puede hacer la diferencia.... entre grandeza e ineptitud.</p>
+						</li>
+						<li class="figure"><p>Eitaro Oshima<p></li>
+					</ul>
+					<code>flex-shrink: 0; /* Primer y tercer hijo</code>
+					<ul class="father-preview">
+						<li class="figure is-shrink"><p>El tigre y el gato<p></li>
+						<li class="figure "><p>Nunca enseñes todo lo que sabes ni muestres todo lo que eres por que a veces ese silencio puede hacer la diferencia.... entre grandeza e ineptitud.</p>
+						</li>
+						<li class="figure is-shrink"><p>Eitaro Oshima<p></li>
+					</ul>
+
+				</article>
+			</section>
+		</section>
+	</article>
+</body>
+</html> 

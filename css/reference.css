@@ -1,0 +1,16 @@
+.reference {
+	display: flex;
+	flex-wrap: wrap;
+}
+.reference-nav {
+	background-color: #EBF1FB;
+	padding: 20px;
+	margin: 0 20px 10px 0;
+	flex-basis: 200px;
+}
+.reference-nav p {
+	margin-bottom: 0;
+}
+.reference-nav.is-indirect {
+	background-color: #F2F2F2;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "flexbox",
+  "version": "1.0.0",
+  "description": "Primeros pasos con flexbox",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MFREIJO/Flexbox.git"
+  },
+  "author": "María José Freijo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MFREIJO/Flexbox/issues"
+  },
+  "homepage": "https://github.com/MFREIJO/Flexbox#readme"
+}

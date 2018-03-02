@@ -1,0 +1,23 @@
+.property {
+	display: flex;
+}
+
+.property section {
+	flex-basis: 50%;
+}
+.property article {
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 10px;
+}
+.property-container article {
+	background-color: #ECD8F1;
+	margin-right: 10px;
+}
+.property-item article {
+	background-color: #FFECD5;
+	margin-left: 10px;
+}
+
+.property-item h2 {
+	margin-left: 10px;
+}

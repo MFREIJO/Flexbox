@@ -1,0 +1,125 @@
+.father-preview {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+	background-color: #88499C
+}
+
+.father-preview.is-first {
+	margin-right: 10px;
+}
+.father-preview.is-disable {
+	background-color: #EEEEEE;
+	margin-left: 10px;
+}
+.father-preview.is-height {
+	height: 260px;
+}
+
+
+.father-preview.is-reverse {
+	flex-direction: row-reverse;
+}
+.father-preview.is-colum {
+	flex-direction: column;
+	align-items: center;
+}
+.father-preview.is-wrap {
+	flex-wrap: wrap;
+}
+.father-preview.is-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.father-preview.is-flex-end {
+	justify-content: flex-end;
+}
+.father-preview.is-center {
+	justify-content: center;
+}
+.father-preview.is-between {
+	justify-content: space-between;
+}
+.father-preview.is-around {
+	justify-content: space-around;
+}
+.father-preview.is-evenly {
+	justify-content: space-evenly;
+}
+.father-preview.is-aling-start {
+	align-items: flex-start;
+}
+.father-preview.is-aling-end {
+	align-items: flex-end;
+}
+
+.father-preview.is-aling-center {
+	align-items: center;
+}
+.father-preview.is-aling-stretch {
+	align-items: stretch;
+}
+.father-preview.is-baseline {
+	align-items: baseline;
+}
+.father-preview.is-content-start {
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.father-preview.is-content-end {
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+.father-preview.is-content-center {
+	flex-wrap: wrap;
+	align-content: center;
+}
+.father-preview.is-content-strech {
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+.father-preview.is-content-between {
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.father-preview.is-content-around {
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+li.figure {
+	background-color: #E77E24;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+li.figure.is-disable{
+	background-color: #CCCCCC;
+	flex-basis: 70px;
+} 
+li.figure.is-basis {
+	flex-basis: 70px;
+}
+li.figure.is-basis2x {
+	flex-basis: 120px;
+}
+li.figure.is-basis2y {
+	flex-basis: 70px;
+	padding: 50px 20px;
+}
+
+.father-preview p {
+	color: white;
+}
+li.figure.is-grow-0 {
+	flex-grow: 0;
+}
+li.figure.is-grow-1 {
+	flex-grow: 1;
+}
+li.figure.is-grow-2 {
+	flex-grow: 2;
+}
+li.figure.is-shrink {
+	flex-shrink: 0;
+}
